@@ -1,0 +1,24 @@
+.temperature-viewer-grid {
+  display: grid;
+  grid-gap: var(--homey-su-2);
+  grid-template-columns: 1fr 1fr;
+}
+.temperature-viewer-grid-small {
+  display: grid;
+  grid-gap: var(--homey-su-2);
+  grid-template-columns: 1fr;
+  margin-top: var(--homey-su-4);
+}
+
+.temperature-small-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temperature-card__number {
+  font-size: var(--homey-font-size-xxlarge);
+  line-height: var(--homey-line-height-xlarge);
+  font-weight: var(--homey-font-weight-bold);
+}

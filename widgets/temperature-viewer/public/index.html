@@ -1,33 +1,21 @@
 <html>
   <head>
-    <style>
-      /* Example of a custom CSS class. */
-      .custom-image-class {
-        margin: var(--homey-su-3) auto var(--homey-su-5);
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://unpkg.com/htm@2.2.1" crossorigin></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
   </head>
 
   <body class="homey-widget homey-dark-mode">
-    <img src="homey-logo.png" alt="Homey logo" class="custom-image-class" />
-    <p class="homey-text-regular homey-text-align-center"
-      >Edit public/index.html and hit refresh.</p
-    >
+    <div id="app"></div>
 
-    <script type="text/javascript">
-      function onHomeyReady(Homey) {
-        Homey.ready();
-
-        // View the settings the user provided if your widget has settings.
-        console.log('Widget settings:', Homey.getSettings());
-
-        // Fetch something from your app.
-        Homey.api('GET', '/', {})
-          .then((result) => {
-            console.log(result);
-          })
-          .catch(console.error);
-      }
-    </script>
+    <script type="module" src="./index.mjs"></script>
   </body>
 </html>
