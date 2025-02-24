@@ -1,0 +1,13 @@
+{
+  "name": {
+    "en": "Temperature Viewer"
+  },
+  "height": 188,
+  "settings": [],
+  "api": {
+    "getSomething": {
+      "method": "GET",
+      "path": "/"
+    }
+  }
+}

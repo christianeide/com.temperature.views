@@ -1,20 +1,16 @@
 {
   "id": "com.temperature.views",
   "version": "1.0.0",
-  "compatibility": ">=5.0.0",
+  "compatibility": ">=12.1.2",
   "sdk": 3,
-  "platforms": [
-    "local"
-  ],
+  "platforms": ["local"],
   "name": {
     "en": "Temperature views"
   },
   "description": {
     "en": "Show temparatures in Homey dashboards"
   },
-  "category": [
-    "climate"
-  ],
+  "category": ["climate"],
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -24,5 +20,6 @@
   "author": {
     "name": "Christian Gogstad Eide",
     "email": "christian@gogstadeide.no"
-  }
+  },
+  "esm": true
 }
