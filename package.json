@@ -15,5 +15,8 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "homey-api": "^3.8.0"
   }
 }
