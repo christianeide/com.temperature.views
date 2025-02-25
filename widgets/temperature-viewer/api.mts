@@ -1,15 +1,21 @@
 import type Homey from 'homey/lib/Homey.d.ts';
 
 export default {
-  async getSomething({ homey, query }: { homey: Homey; query: any }) {
-    // you can access query parameters like "/?foo=bar" through `query.foo`
+  async temperature({ homey }: { homey: Homey }) {
+    try {
+      //@ts-expect-error getTemperatures is defined in app.mts
+      const temperatures = await homey.app.getTemperatures();
 
-    // you can access the App instance through homey.app
-    // const result = await homey.app.getSomething();
-    // return result;
+      if (!temperatures) {
+        return null;
+      }
 
-    // perform other logic like mapping result data
-
-    return 'Hello from App';
+      return temperatures;
+    } catch (error) {
+      homey.error('Failed to fetch temperatures:', error);
+      return {
+        error: 'Failed to fetch temperatures',
+      };
+    }
   },
 };

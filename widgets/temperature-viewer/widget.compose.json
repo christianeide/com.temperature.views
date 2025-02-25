@@ -2,12 +2,12 @@
   "name": {
     "en": "Temperature Viewer"
   },
-  "height": 188,
+  "height": 212,
   "settings": [],
   "api": {
-    "getSomething": {
+    "temperature": {
       "method": "GET",
-      "path": "/"
+      "path": "/temperature"
     }
   }
 }

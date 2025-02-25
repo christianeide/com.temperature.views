@@ -3,10 +3,7 @@
   grid-gap: var(--homey-su-2);
   grid-template-columns: 1fr 1fr;
 }
-.temperature-viewer-grid-small {
-  display: grid;
-  grid-gap: var(--homey-su-2);
-  grid-template-columns: 1fr;
+.temperature-viewer-grid--small {
   margin-top: var(--homey-su-4);
 }
 
@@ -15,6 +12,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.temperature-small-card:nth-child(odd) {
+  padding-right: var(--homey-su-2);
 }
 
 .temperature-card__number {
