@@ -23,3 +23,9 @@
   line-height: var(--homey-line-height-xlarge);
   font-weight: var(--homey-font-weight-bold);
 }
+
+.temperature-card__number--light {
+  background: var(--homey-color-white);
+  padding-left: var(--homey-su);
+  padding-right: 3px;
+}
