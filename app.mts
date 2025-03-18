@@ -45,6 +45,10 @@ export default class MyApp extends Homey.App {
           temperatures.outdoor =
             device.capabilitiesObj?.['measure_temperature.outdoorTemperature']
               ?.value ?? null;
+          break;
+
+        // Livingroom
+        case 'homey:device:47698636-18c3-4429-9b77-f2c899475f77':
           temperatures.livingroom =
             device.capabilitiesObj?.measure_temperature?.value ?? null;
           break;
