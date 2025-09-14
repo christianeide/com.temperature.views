@@ -66,7 +66,7 @@ export default class MyApp extends Homey.App {
           break;
 
         // Floor temperature livingroom
-        case 'homey:device:a47f60fd-f521-4e2d-8ef2-4ad5742dae68':
+        case 'homey:device:f618152a-ac72-4eb2-b1e1-d576fb6d754a':
           temperatures.livingroomFloor =
             device.capabilitiesObj?.measure_temperature?.value ?? null;
           break;
